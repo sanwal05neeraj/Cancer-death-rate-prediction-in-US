@@ -5,19 +5,14 @@ from sklearn.preprocessing import OneHotEncoder
 def bin_to_num(data):
     binnedinc = []
     for i in data["binnedinc"]:
-    
         i = i.strip("()[]") 
         print(i)
-  
         i = i.split(",")
         print(i)
-        
         i = tuple(i) 
         print(i)
-        
         i = tuple(map(float, i)) 
         print(i)
-        
         i = list(i) 
         print(i)
         
